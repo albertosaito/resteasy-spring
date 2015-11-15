@@ -17,14 +17,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 
 @Component
-@Path("/customer")
+@Path("/model")
 public class PrintService {
 
     @Autowired
     ModelManager manager;
 
     @GET
-    @Path("/print")
+    @Path("/test")
     public Response printMessage() {
 
 	final String result = manager.getMessage();
